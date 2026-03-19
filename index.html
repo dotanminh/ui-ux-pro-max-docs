@@ -42,7 +42,11 @@ footer a:hover{text-decoration:underline}
 .sidebar{width:260px;position:fixed;top:64px;left:0;bottom:0;overflow-y:auto;background:var(--bg2);border-right:1px solid var(--border);padding:20px 0;scrollbar-width:thin;scrollbar-color:var(--bg4) transparent}
 .sidebar::-webkit-scrollbar{width:4px}
 .sidebar::-webkit-scrollbar-thumb{background:var(--bg4);border-radius:2px}
-.sidebar-title{font-family:var(--font-h);font-size:.7rem;text-transform:uppercase;letter-spacing:1.5px;color:var(--text3);padding:8px 20px;margin-top:12px}
+.sidebar-title{font-family:var(--font-h);font-size:.68rem;text-transform:uppercase;letter-spacing:1.8px;font-weight:700;padding:10px 16px 6px 14px;margin-top:16px;border-left:3px solid transparent}
+.sidebar-title:nth-of-type(1){color:var(--accent);border-left-color:var(--accent)}
+.sidebar-title:nth-of-type(2){color:var(--green);border-left-color:var(--green)}
+.sidebar-title:nth-of-type(3){color:var(--orange);border-left-color:var(--orange)}
+.sidebar-title:nth-of-type(4){color:var(--cyan);border-left-color:var(--cyan)}
 .sidebar a{display:block;padding:7px 20px;color:var(--text2);text-decoration:none;font-size:.85rem;transition:all .2s;border-left:2px solid transparent}
 .sidebar a:hover{color:var(--text);background:var(--glass)}
 .sidebar a.active{color:var(--accent);border-left-color:var(--accent);background:rgba(129,140,248,0.08)}
