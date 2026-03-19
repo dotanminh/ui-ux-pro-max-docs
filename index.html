@@ -12,17 +12,34 @@
 :root{--bg:#0a0e17;--bg2:#111827;--bg3:#1f2937;--bg4:#374151;--text:#f1f5f9;--text2:#94a3b8;--text3:#64748b;--accent:#818cf8;--accent2:#6366f1;--accent3:#4f46e5;--green:#34d399;--orange:#fb923c;--red:#f87171;--yellow:#fbbf24;--cyan:#22d3ee;--glass:rgba(255,255,255,0.05);--glass2:rgba(255,255,255,0.08);--border:rgba(255,255,255,0.08);--radius:12px;--font-h:'Space Grotesk',sans-serif;--font-b:'DM Sans',sans-serif;--font-m:'JetBrains Mono',monospace}
 html{scroll-behavior:smooth;scroll-padding-top:80px}
 body{font-family:var(--font-b);background:var(--bg);color:var(--text);line-height:1.8;-webkit-font-smoothing:antialiased}
-.navbar{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(10,14,23,0.85);backdrop-filter:blur(20px);border-bottom:1px solid var(--border);padding:0 24px;height:60px;display:flex;align-items:center;justify-content:space-between}
-.nav-logo{font-family:var(--font-h);font-weight:700;font-size:1.1rem;color:var(--accent);display:flex;align-items:center;gap:8px}
-.nav-logo svg{width:24px;height:24px}
-.nav-links{display:flex;gap:4px}
-.nav-links a{color:var(--text2);text-decoration:none;font-size:.85rem;padding:6px 12px;border-radius:8px;transition:all .2s}
-.nav-links a:hover,.nav-links a.active{color:var(--text);background:var(--glass2)}
+.navbar{position:fixed;top:0;left:0;right:0;z-index:100;background:linear-gradient(135deg,rgba(10,14,23,0.95),rgba(17,24,39,0.95));backdrop-filter:blur(24px);border-bottom:1px solid rgba(129,140,248,0.15);padding:0 24px;height:64px;display:flex;align-items:center;justify-content:space-between;box-shadow:0 4px 24px rgba(0,0,0,0.3)}
+.nav-logo{font-family:var(--font-h);font-weight:700;font-size:1.15rem;color:var(--accent);display:flex;align-items:center;gap:10px;text-shadow:0 0 20px rgba(129,140,248,0.4)}
+.nav-logo svg{width:26px;height:26px;filter:drop-shadow(0 0 6px rgba(129,140,248,0.5))}
+.nav-links{display:flex;gap:3px;background:rgba(255,255,255,0.04);border-radius:10px;padding:4px}
+.nav-links a{color:var(--text2);text-decoration:none;font-size:.82rem;font-weight:500;padding:7px 14px;border-radius:8px;transition:all .25s;position:relative}
+.nav-links a:hover{color:var(--text);background:rgba(129,140,248,0.1)}
+.nav-links a.active{color:#fff;background:linear-gradient(135deg,var(--accent3),var(--accent2));box-shadow:0 2px 12px rgba(99,102,241,0.35)}
 .nav-hamburger{display:none;background:none;border:none;color:var(--text);cursor:pointer;padding:8px}
-.author-bar{position:fixed;top:70px;right:20px;z-index:90;background:rgba(251,191,36,0.1);backdrop-filter:blur(12px);border:1px solid rgba(251,191,36,0.2);border-radius:var(--radius);padding:8px 16px;font-size:.8rem}
-.author-bar a{color:var(--yellow);text-decoration:none;font-weight:600}
-.page{display:flex;margin-top:60px;min-height:calc(100vh - 60px)}
-.sidebar{width:260px;position:fixed;top:60px;left:0;bottom:0;overflow-y:auto;background:var(--bg2);border-right:1px solid var(--border);padding:20px 0;scrollbar-width:thin;scrollbar-color:var(--bg4) transparent}
+.author-bar{position:fixed;top:76px;right:20px;z-index:90;background:linear-gradient(135deg,rgba(251,191,36,0.1),rgba(245,158,11,0.05));backdrop-filter:blur(16px);border:1px solid rgba(251,191,36,0.25);border-radius:var(--radius);padding:10px 18px;font-size:.82rem;box-shadow:0 4px 16px rgba(251,191,36,0.08)}
+.author-bar a{color:var(--yellow);text-decoration:none;font-weight:600;text-shadow:0 0 12px rgba(251,191,36,0.3)}
+.author-bar a:hover{text-shadow:0 0 20px rgba(251,191,36,0.5)}
+.compiler-section{background:linear-gradient(135deg,rgba(129,140,248,0.06),rgba(99,102,241,0.03));border:1px solid rgba(129,140,248,0.12);border-radius:var(--radius);padding:24px;margin-bottom:40px;display:flex;gap:20px;align-items:center}
+.compiler-avatar{width:56px;height:56px;border-radius:50%;background:linear-gradient(135deg,var(--accent),var(--accent3));display:flex;align-items:center;justify-content:center;flex-shrink:0;box-shadow:0 4px 16px rgba(99,102,241,0.3)}
+.compiler-avatar svg{width:28px;height:28px;color:#fff}
+.compiler-info h4{font-family:var(--font-h);font-size:.95rem;margin-bottom:4px;color:var(--text)}
+.compiler-info p{font-size:.82rem;color:var(--text3);margin:0}
+.compiler-info a{color:var(--accent);text-decoration:none;font-weight:500}
+.compiler-info a:hover{text-decoration:underline}
+.compiler-links{display:flex;gap:10px;margin-top:8px;flex-wrap:wrap}
+.compiler-link{display:inline-flex;align-items:center;gap:5px;background:var(--glass2);border:1px solid var(--border);border-radius:8px;padding:5px 12px;font-size:.78rem;color:var(--text2);text-decoration:none;transition:all .2s;cursor:pointer}
+.compiler-link:hover{border-color:var(--accent);color:var(--accent);background:rgba(129,140,248,0.08)}
+.compiler-link svg{width:14px;height:14px}
+footer{background:var(--bg2);border-top:1px solid var(--border);padding:24px 48px;margin-left:260px;text-align:center}
+footer p{color:var(--text3);font-size:.78rem;margin:0}
+footer a{color:var(--accent);text-decoration:none}
+footer a:hover{text-decoration:underline}
+.page{display:flex;margin-top:64px;min-height:calc(100vh - 64px)}
+.sidebar{width:260px;position:fixed;top:64px;left:0;bottom:0;overflow-y:auto;background:var(--bg2);border-right:1px solid var(--border);padding:20px 0;scrollbar-width:thin;scrollbar-color:var(--bg4) transparent}
 .sidebar::-webkit-scrollbar{width:4px}
 .sidebar::-webkit-scrollbar-thumb{background:var(--bg4);border-radius:2px}
 .sidebar-title{font-family:var(--font-h);font-size:.7rem;text-transform:uppercase;letter-spacing:1.5px;color:var(--text3);padding:8px 20px;margin-top:12px}
@@ -68,20 +85,24 @@ pre{background:var(--bg2);border:1px solid var(--border);border-radius:var(--rad
 .jump-top.show{opacity:1}
 .jump-top:hover{background:var(--accent2);transform:translateY(-2px)}
 @media(max-width:800px){
-.nav-links{display:none;position:absolute;top:60px;left:0;right:0;background:var(--bg2);flex-direction:column;padding:12px;border-bottom:1px solid var(--border)}
+.nav-links{display:none;position:absolute;top:64px;left:0;right:0;background:linear-gradient(180deg,rgba(17,24,39,0.98),rgba(10,14,23,0.98));flex-direction:column;padding:12px;border-bottom:1px solid rgba(129,140,248,0.15);box-shadow:0 8px 24px rgba(0,0,0,0.3)}
 .nav-links.open{display:flex}
+.nav-links a{padding:10px 16px;font-size:.9rem}
 .nav-hamburger{display:block}
 .sidebar{display:none}
 .content{margin-left:0;padding:24px 16px 120px}
 .hero h1{font-size:1.5rem}
 .stats{grid-template-columns:repeat(2,1fr)}
 .card-grid{grid-template-columns:1fr}
-.author-bar{position:fixed;top:auto;bottom:0;left:0;right:0;border-radius:0;text-align:center;border:none;border-top:1px solid rgba(251,191,36,0.2);z-index:95}
-.bottom-nav{display:flex;position:fixed;bottom:36px;left:0;right:0;background:rgba(10,14,23,0.95);backdrop-filter:blur(16px);border-top:1px solid var(--border);z-index:90;justify-content:space-around;padding:8px 0}
-.bottom-nav a{color:var(--text3);text-decoration:none;font-size:.65rem;text-align:center;padding:4px 8px;display:flex;flex-direction:column;align-items:center;gap:2px}
+.compiler-section{flex-direction:column;text-align:center;gap:12px}
+.compiler-links{justify-content:center}
+.author-bar{position:fixed;top:auto;bottom:0;left:0;right:0;border-radius:0;text-align:center;border:none;border-top:1px solid rgba(251,191,36,0.2);z-index:95;background:linear-gradient(135deg,rgba(251,191,36,0.08),rgba(10,14,23,0.95));padding:8px}
+.bottom-nav{display:flex;position:fixed;bottom:36px;left:0;right:0;background:linear-gradient(180deg,rgba(10,14,23,0.98),rgba(17,24,39,0.98));backdrop-filter:blur(16px);border-top:1px solid rgba(129,140,248,0.12);z-index:90;justify-content:space-around;padding:10px 0}
+.bottom-nav a{color:var(--text3);text-decoration:none;font-size:.68rem;text-align:center;padding:4px 8px;display:flex;flex-direction:column;align-items:center;gap:3px;transition:color .2s}
 .bottom-nav a.active{color:var(--accent)}
-.bottom-nav svg{width:18px;height:18px}
+.bottom-nav svg{width:20px;height:20px}
 .jump-top{bottom:100px;right:16px}
+footer{margin-left:0;padding:24px 16px}
 }
 @media(min-width:801px){.bottom-nav{display:none}}
 </style>
@@ -134,6 +155,19 @@ pre{background:var(--bg2);border:1px solid var(--border);border-radius:var(--rad
 <div class="hero-badge"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>Antigravity Skill</div>
 <h1>UI/UX Pro Max - Hướng Dẫn Thiết Kế Chuyên Nghiệp</h1>
 <p>Đây là tài liệu hướng dẫn sử dụng Skill UI/UX Pro Max - bộ công cụ giúp bạn thiết kế giao diện web và mobile theo chuẩn chuyên nghiệp, tự động đề xuất phong cách, màu sắc, font chữ và các quy tắc UX.</p>
+</div>
+
+<div class="compiler-section">
+<div class="compiler-avatar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
+<div class="compiler-info">
+<h4>Biên soạn bởi Minh Đỗ</h4>
+<p>Tài liệu hướng dẫn Skill UI/UX Pro Max dành cho nền tảng Antigravity. Nội dung được biên soạn dựa trên bộ dữ liệu gốc của Skill bao gồm 58 styles, 96 bộ màu, 57 cặp font và 35+ quy tắc UX.</p>
+<div class="compiler-links">
+<a href="https://facebook.com/dotanminh" target="_blank" class="compiler-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>Facebook</a>
+<a href="https://github.com/dotanminh/ui-ux-pro-max-docs" target="_blank" class="compiler-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>Mã nguồn GitHub</a>
+<a href="https://zalo.me/g/igkywu632" target="_blank" class="compiler-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>Cộng đồng Zalo</a>
+</div>
+</div>
 </div>
 
 <div class="stats" id="stats-section">
@@ -430,6 +464,10 @@ python search.py "animation accessibility" --domain ux</pre>
 
 </main>
 </div>
+
+<footer>
+<p>Tài liệu UI/UX Pro Max - Biên soạn bởi <a href="https://facebook.com/dotanminh" target="_blank">Minh Đỗ</a> | Mã nguồn: <a href="https://github.com/dotanminh/ui-ux-pro-max-docs" target="_blank">GitHub</a> | Skill thuộc bộ <a href="https://github.com/dotanminh" target="_blank">Antigravity Kit Engineer</a></p>
+</footer>
 
 <nav class="bottom-nav">
 <a href="#gioi-thieu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg>Home</a>
