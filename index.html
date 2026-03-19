@@ -3,30 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>UI/UX Pro Max - Design Intelligence | Tài liệu Skill</title>
-<meta name="description" content="Tài liệu toàn diện cho Skill UI/UX Pro Max - 58 styles, 96 color palettes, 57 font pairings, 11 tech stacks">
+<title>UI/UX Pro Max - Tai lieu huong dan thiet ke</title>
+<meta name="description" content="Huong dan su dung Skill UI/UX Pro Max - thiet ke chuyen nghiep voi 58 styles, 96 bo mau, 57 cap font">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-:root{
---bg:#0a0e17;--bg2:#111827;--bg3:#1f2937;--bg4:#374151;
---text:#f1f5f9;--text2:#94a3b8;--text3:#64748b;
---accent:#818cf8;--accent2:#6366f1;--accent3:#4f46e5;
---green:#34d399;--green2:#10b981;
---orange:#fb923c;--red:#f87171;--yellow:#fbbf24;
---cyan:#22d3ee;--pink:#f472b6;
---glass:rgba(255,255,255,0.05);--glass2:rgba(255,255,255,0.08);
---border:rgba(255,255,255,0.08);
---radius:12px;--radius2:16px;
---font-h:'Space Grotesk',sans-serif;
---font-b:'DM Sans',sans-serif;
---font-m:'JetBrains Mono',monospace;
-}
+:root{--bg:#0a0e17;--bg2:#111827;--bg3:#1f2937;--bg4:#374151;--text:#f1f5f9;--text2:#94a3b8;--text3:#64748b;--accent:#818cf8;--accent2:#6366f1;--accent3:#4f46e5;--green:#34d399;--orange:#fb923c;--red:#f87171;--yellow:#fbbf24;--cyan:#22d3ee;--glass:rgba(255,255,255,0.05);--glass2:rgba(255,255,255,0.08);--border:rgba(255,255,255,0.08);--radius:12px;--font-h:'Space Grotesk',sans-serif;--font-b:'DM Sans',sans-serif;--font-m:'JetBrains Mono',monospace}
 html{scroll-behavior:smooth;scroll-padding-top:80px}
-body{font-family:var(--font-b);background:var(--bg);color:var(--text);line-height:1.7;-webkit-font-smoothing:antialiased}
-
-/* NAVBAR */
+body{font-family:var(--font-b);background:var(--bg);color:var(--text);line-height:1.8;-webkit-font-smoothing:antialiased}
 .navbar{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(10,14,23,0.85);backdrop-filter:blur(20px);border-bottom:1px solid var(--border);padding:0 24px;height:60px;display:flex;align-items:center;justify-content:space-between}
 .nav-logo{font-family:var(--font-h);font-weight:700;font-size:1.1rem;color:var(--accent);display:flex;align-items:center;gap:8px}
 .nav-logo svg{width:24px;height:24px}
@@ -34,12 +19,8 @@ body{font-family:var(--font-b);background:var(--bg);color:var(--text);line-heigh
 .nav-links a{color:var(--text2);text-decoration:none;font-size:.85rem;padding:6px 12px;border-radius:8px;transition:all .2s}
 .nav-links a:hover,.nav-links a.active{color:var(--text);background:var(--glass2)}
 .nav-hamburger{display:none;background:none;border:none;color:var(--text);cursor:pointer;padding:8px}
-
-/* AUTHOR */
 .author-bar{position:fixed;top:70px;right:20px;z-index:90;background:rgba(251,191,36,0.1);backdrop-filter:blur(12px);border:1px solid rgba(251,191,36,0.2);border-radius:var(--radius);padding:8px 16px;font-size:.8rem}
 .author-bar a{color:var(--yellow);text-decoration:none;font-weight:600}
-
-/* LAYOUT */
 .page{display:flex;margin-top:60px;min-height:calc(100vh - 60px)}
 .sidebar{width:260px;position:fixed;top:60px;left:0;bottom:0;overflow-y:auto;background:var(--bg2);border-right:1px solid var(--border);padding:20px 0;scrollbar-width:thin;scrollbar-color:var(--bg4) transparent}
 .sidebar::-webkit-scrollbar{width:4px}
@@ -49,526 +30,447 @@ body{font-family:var(--font-b);background:var(--bg);color:var(--text);line-heigh
 .sidebar a:hover{color:var(--text);background:var(--glass)}
 .sidebar a.active{color:var(--accent);border-left-color:var(--accent);background:rgba(129,140,248,0.08)}
 .content{margin-left:260px;flex:1;padding:40px 48px 80px;max-width:960px}
-
-/* HERO */
 .hero{padding:40px 0 32px}
 .hero-badge{display:inline-flex;align-items:center;gap:6px;background:rgba(129,140,248,0.12);color:var(--accent);padding:6px 14px;border-radius:20px;font-size:.8rem;font-weight:500;margin-bottom:16px}
-.hero h1{font-family:var(--font-h);font-size:2.4rem;font-weight:700;line-height:1.2;margin-bottom:12px;background:linear-gradient(135deg,var(--text),var(--accent));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.hero h1{font-family:var(--font-h);font-size:2.2rem;font-weight:700;line-height:1.3;margin-bottom:12px;background:linear-gradient(135deg,var(--text),var(--accent));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
 .hero p{color:var(--text2);font-size:1.05rem;max-width:640px}
-
-/* STATS */
 .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:28px 0 40px}
 .stat{background:var(--glass2);border:1px solid var(--border);border-radius:var(--radius);padding:16px;text-align:center}
 .stat-num{font-family:var(--font-h);font-size:1.6rem;font-weight:700;color:var(--accent)}
 .stat-label{font-size:.78rem;color:var(--text3);margin-top:2px}
-
-/* SECTION */
 section{margin-bottom:48px}
-section h2{font-family:var(--font-h);font-size:1.5rem;font-weight:600;margin-bottom:16px;padding-bottom:8px;border-bottom:1px solid var(--border);color:var(--text)}
+section h2{font-family:var(--font-h);font-size:1.5rem;font-weight:600;margin-bottom:16px;padding-bottom:8px;border-bottom:1px solid var(--border)}
 section h3{font-family:var(--font-h);font-size:1.1rem;font-weight:600;color:var(--green);margin:20px 0 10px}
 section h4{font-size:.95rem;font-weight:600;color:var(--orange);margin:16px 0 8px}
 p{color:var(--text2);margin-bottom:12px}
-
-/* TABLES */
 .table-wrap{overflow-x:auto;margin:12px 0 20px;border-radius:var(--radius);border:1px solid var(--border)}
 table{width:100%;border-collapse:collapse;font-size:.82rem}
 th{background:var(--bg3);color:var(--text);font-weight:600;text-align:left;padding:10px 14px;white-space:nowrap;font-family:var(--font-h);font-size:.78rem;text-transform:uppercase;letter-spacing:.5px}
 td{padding:9px 14px;border-top:1px solid var(--border);color:var(--text2);vertical-align:top}
 tr:hover td{background:var(--glass)}
-
-/* CARDS */
 .card-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px;margin:12px 0 20px}
-.card{background:var(--glass2);border:1px solid var(--border);border-radius:var(--radius);padding:18px;transition:all .25s}
+.card{background:var(--glass2);border:1px solid var(--border);border-radius:var(--radius);padding:18px;transition:all .25s;cursor:pointer}
 .card:hover{border-color:var(--accent);transform:translateY(-2px);box-shadow:0 8px 24px rgba(99,102,241,0.1)}
-.card-title{font-family:var(--font-h);font-weight:600;font-size:.95rem;margin-bottom:6px;color:var(--text)}
+.card-title{font-family:var(--font-h);font-weight:600;font-size:.95rem;margin-bottom:6px}
 .card-desc{font-size:.82rem;color:var(--text3)}
 .card-tag{display:inline-block;background:rgba(129,140,248,0.12);color:var(--accent);padding:2px 8px;border-radius:6px;font-size:.72rem;margin-top:8px;font-weight:500}
-
-/* CODE */
 code{font-family:var(--font-m);background:var(--bg3);padding:2px 6px;border-radius:4px;font-size:.82rem;color:var(--green)}
 pre{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:16px;overflow-x:auto;margin:10px 0 16px;font-family:var(--font-m);font-size:.8rem;line-height:1.6;color:var(--text2)}
-
-/* PRIORITY BADGE */
-.priority{display:inline-flex;align-items:center;gap:4px;padding:2px 8px;border-radius:6px;font-size:.72rem;font-weight:600}
-.priority.critical{background:rgba(248,113,113,0.15);color:var(--red)}
-.priority.high{background:rgba(251,146,60,0.15);color:var(--orange)}
-.priority.medium{background:rgba(251,191,36,0.15);color:var(--yellow)}
-.priority.low{background:rgba(52,211,153,0.15);color:var(--green)}
-
-/* COLOR SWATCH */
-.swatch-row{display:flex;gap:6px;flex-wrap:wrap;margin:4px 0}
-.swatch{width:28px;height:28px;border-radius:6px;border:1px solid var(--border);cursor:pointer;position:relative}
-.swatch:hover::after{content:attr(data-hex);position:absolute;bottom:-22px;left:50%;transform:translateX(-50%);background:var(--bg);padding:2px 6px;border-radius:4px;font-size:.65rem;white-space:nowrap;z-index:10;color:var(--text);border:1px solid var(--border)}
-
-/* CHECKLIST */
+.tip{background:rgba(52,211,153,0.08);border:1px solid rgba(52,211,153,0.2);border-radius:var(--radius);padding:14px 18px;margin:12px 0;font-size:.88rem}
+.tip strong{color:var(--green)}
+.warn{background:rgba(251,146,60,0.08);border:1px solid rgba(251,146,60,0.2);border-radius:var(--radius);padding:14px 18px;margin:12px 0;font-size:.88rem}
+.warn strong{color:var(--orange)}
 .checklist{list-style:none;padding:0;margin:8px 0 16px}
 .checklist li{padding:6px 0;padding-left:24px;position:relative;font-size:.88rem;color:var(--text2)}
 .checklist li::before{content:"";position:absolute;left:0;top:10px;width:14px;height:14px;border:2px solid var(--accent);border-radius:4px}
-
-/* JUMP TO TOP */
+.swatch{display:inline-block;width:28px;height:28px;border-radius:6px;border:1px solid var(--border);vertical-align:middle;margin-right:4px}
 .jump-top{position:fixed;bottom:24px;right:24px;width:44px;height:44px;border-radius:50%;background:var(--accent3);color:#fff;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;opacity:0;transition:all .3s;z-index:80;box-shadow:0 4px 16px rgba(99,102,241,0.3)}
 .jump-top.show{opacity:1}
 .jump-top:hover{background:var(--accent2);transform:translateY(-2px)}
-
-/* MOBILE */
 @media(max-width:800px){
-  .nav-links{display:none;position:absolute;top:60px;left:0;right:0;background:var(--bg2);flex-direction:column;padding:12px;border-bottom:1px solid var(--border)}
-  .nav-links.open{display:flex}
-  .nav-hamburger{display:block}
-  .sidebar{display:none}
-  .content{margin-left:0;padding:24px 16px 100px}
-  .hero h1{font-size:1.6rem}
-  .stats{grid-template-columns:repeat(2,1fr)}
-  .card-grid{grid-template-columns:1fr}
-  .author-bar{position:fixed;top:auto;bottom:0;left:0;right:0;border-radius:0;text-align:center;border:none;border-top:1px solid rgba(251,191,36,0.2);z-index:95}
-  /* Bottom nav */
-  .bottom-nav{display:flex;position:fixed;bottom:36px;left:0;right:0;background:rgba(10,14,23,0.95);backdrop-filter:blur(16px);border-top:1px solid var(--border);z-index:90;justify-content:space-around;padding:8px 0}
-  .bottom-nav a{color:var(--text3);text-decoration:none;font-size:.65rem;text-align:center;padding:4px 8px;display:flex;flex-direction:column;align-items:center;gap:2px}
-  .bottom-nav a.active{color:var(--accent)}
-  .bottom-nav svg{width:18px;height:18px}
-  .jump-top{bottom:100px;right:16px}
+.nav-links{display:none;position:absolute;top:60px;left:0;right:0;background:var(--bg2);flex-direction:column;padding:12px;border-bottom:1px solid var(--border)}
+.nav-links.open{display:flex}
+.nav-hamburger{display:block}
+.sidebar{display:none}
+.content{margin-left:0;padding:24px 16px 120px}
+.hero h1{font-size:1.5rem}
+.stats{grid-template-columns:repeat(2,1fr)}
+.card-grid{grid-template-columns:1fr}
+.author-bar{position:fixed;top:auto;bottom:0;left:0;right:0;border-radius:0;text-align:center;border:none;border-top:1px solid rgba(251,191,36,0.2);z-index:95}
+.bottom-nav{display:flex;position:fixed;bottom:36px;left:0;right:0;background:rgba(10,14,23,0.95);backdrop-filter:blur(16px);border-top:1px solid var(--border);z-index:90;justify-content:space-around;padding:8px 0}
+.bottom-nav a{color:var(--text3);text-decoration:none;font-size:.65rem;text-align:center;padding:4px 8px;display:flex;flex-direction:column;align-items:center;gap:2px}
+.bottom-nav a.active{color:var(--accent)}
+.bottom-nav svg{width:18px;height:18px}
+.jump-top{bottom:100px;right:16px}
 }
 @media(min-width:801px){.bottom-nav{display:none}}
 </style>
 </head>
 <body>
-
-<!-- NAVBAR -->
 <nav class="navbar">
-  <div class="nav-logo">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M9 3v18M3 9h18"/></svg>
-    UI/UX Pro Max
-  </div>
-  <div class="nav-links" id="navLinks">
-    <a href="#overview" class="active">Overview</a>
-    <a href="#rules">Rules</a>
-    <a href="#styles">Styles</a>
-    <a href="#colors">Colors</a>
-    <a href="#typography">Fonts</a>
-    <a href="#stacks">Stacks</a>
-    <a href="#workflow">Workflow</a>
-    <a href="#checklist">Checklist</a>
-  </div>
-  <button class="nav-hamburger" onclick="document.getElementById('navLinks').classList.toggle('open')" aria-label="Menu">
-    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
-  </button>
+<div class="nav-logo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M9 3v18M3 9h18"/></svg>UI/UX Pro Max</div>
+<div class="nav-links" id="navLinks">
+<a href="#gioi-thieu">Gioi thieu</a>
+<a href="#cach-dung">Cach dung</a>
+<a href="#rules">Quy tac</a>
+<a href="#styles">Phong cach</a>
+<a href="#colors">Mau sac</a>
+<a href="#fonts">Font chu</a>
+<a href="#stacks">Tech Stack</a>
+<a href="#checklist">Checklist</a>
+</div>
+<button class="nav-hamburger" onclick="document.getElementById('navLinks').classList.toggle('open')" aria-label="Menu"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg></button>
 </nav>
 
-<!-- AUTHOR -->
-<div class="author-bar"><a href="https://zalo.me/g/igkywu632" target="_blank">Minh Do</a></div>
+<div class="author-bar"><a href="https://facebook.com/dotanminh" target="_blank">Minh Do</a></div>
 
-<!-- SIDEBAR -->
 <div class="page">
 <aside class="sidebar" id="sidebar">
-  <div class="sidebar-title">Tong Quan</div>
-  <a href="#overview">Overview</a>
-  <a href="#stats-section">Stats & Database</a>
-  <div class="sidebar-title">8 Rule Categories</div>
-  <a href="#rules">Priority Rules</a>
-  <a href="#accessibility">1. Accessibility</a>
-  <a href="#interaction">2. Touch & Interaction</a>
-  <a href="#performance">3. Performance</a>
-  <a href="#layout">4. Layout & Responsive</a>
-  <a href="#typo-color">5. Typography & Color</a>
-  <a href="#animation">6. Animation</a>
-  <a href="#style-select">7. Style Selection</a>
-  <a href="#charts-data">8. Charts & Data</a>
-  <div class="sidebar-title">Design Database</div>
-  <a href="#styles">58 UI Styles</a>
-  <a href="#colors">96 Color Palettes</a>
-  <a href="#typography">57 Font Pairings</a>
-  <a href="#stacks">11 Tech Stacks</a>
-  <div class="sidebar-title">Workflow</div>
-  <a href="#workflow">4-Step Workflow</a>
-  <a href="#search-ref">Search Reference</a>
-  <a href="#common-rules">Common Rules</a>
-  <a href="#checklist">Pre-Delivery Checklist</a>
+<div class="sidebar-title">Tong Quan</div>
+<a href="#gioi-thieu">Gioi thieu Skill</a>
+<a href="#skill-lam-gi">Skill nay lam duoc gi?</a>
+<a href="#cach-dung">Huong dan su dung</a>
+<div class="sidebar-title">Quy Tac Thiet Ke</div>
+<a href="#rules">8 nhom quy tac</a>
+<a href="#accessibility">Accessibility</a>
+<a href="#interaction">Touch & Tuong tac</a>
+<a href="#performance">Hieu nang</a>
+<a href="#layout">Layout & Responsive</a>
+<a href="#typo-color">Font & Mau</a>
+<a href="#animation">Animation</a>
+<div class="sidebar-title">Co So Du Lieu</div>
+<a href="#styles">58 phong cach UI</a>
+<a href="#colors">96 bo mau</a>
+<a href="#fonts">57 cap font</a>
+<a href="#stacks">11 Tech Stack</a>
+<div class="sidebar-title">Thuc Hanh</div>
+<a href="#workflow">Quy trinh 4 buoc</a>
+<a href="#vi-du">Vi du cu the</a>
+<a href="#checklist">Checklist truoc khi ship</a>
 </aside>
 
-<!-- CONTENT -->
 <main class="content">
 
-<!-- HERO -->
-<div class="hero" id="overview">
-  <div class="hero-badge">
-    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-    Antigravity Skill
-  </div>
-  <h1>UI/UX Pro Max - Design Intelligence</h1>
-  <p>Comprehensive design guide cho web va mobile. Searchable database voi BM25 engine, priority-based recommendations, va 9 technology stacks.</p>
+<!-- GIOI THIEU -->
+<div class="hero" id="gioi-thieu">
+<div class="hero-badge"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>Antigravity Skill</div>
+<h1>UI/UX Pro Max - Huong Dan Thiet Ke Chuyen Nghiep</h1>
+<p>Day la tai lieu huong dan su dung Skill UI/UX Pro Max - bo cong cu giup ban thiet ke giao dien web va mobile theo chuan chuyen nghiep, tu dong de xuat phong cach, mau sac, font chu va cac quy tac UX.</p>
 </div>
 
-<!-- STATS -->
 <div class="stats" id="stats-section">
-  <div class="stat"><div class="stat-num">58</div><div class="stat-label">UI Styles</div></div>
-  <div class="stat"><div class="stat-num">96</div><div class="stat-label">Color Palettes</div></div>
-  <div class="stat"><div class="stat-num">57</div><div class="stat-label">Font Pairings</div></div>
-  <div class="stat"><div class="stat-num">11</div><div class="stat-label">Tech Stacks</div></div>
+<div class="stat"><div class="stat-num">58</div><div class="stat-label">Phong cach</div></div>
+<div class="stat"><div class="stat-num">96</div><div class="stat-label">Bo mau</div></div>
+<div class="stat"><div class="stat-num">57</div><div class="stat-label">Cap font</div></div>
+<div class="stat"><div class="stat-num">11</div><div class="stat-label">Tech Stack</div></div>
 </div>
+
+<!-- SKILL LAM GI -->
+<section id="skill-lam-gi">
+<h2>Skill nay lam duoc gi?</h2>
+<p>Khi ban yeu cau Antigravity tao mot trang web hoac thiet ke giao dien, Skill UI/UX Pro Max se tu dong:</p>
+<div class="card-grid">
+<div class="card"><div class="card-title">1. Chon phong cach thiet ke</div><div class="card-desc">Dua tren loai san pham (SaaS, e-commerce, y te...), skill se goi y phong cach phu hop nhu Glassmorphism, Minimalism, Dark Mode, v.v.</div></div>
+<div class="card"><div class="card-title">2. De xuat bo mau</div><div class="card-desc">Tu dong chon mau Primary, Secondary, CTA, Background, Text sao cho phu hop voi nganh va muc dich su dung.</div></div>
+<div class="card"><div class="card-title">3. Chon font chu</div><div class="card-desc">Goi y cap font Heading + Body tu Google Fonts, bao gom link import va config cho Tailwind CSS.</div></div>
+<div class="card"><div class="card-title">4. Kiem tra chuan UX</div><div class="card-desc">Ap dung 35+ quy tac UX tu dong: accessibility, responsive, touch target, animation, contrast ratio...</div></div>
+</div>
+<div class="tip"><strong>Meo:</strong> Ban khong can nho tat ca quy tac. Chi can noi voi Antigravity "tao trang web cho spa" hoac "thiet ke dashboard cho SaaS" - Skill se tu dong ap dung moi thu.</div>
+</section>
+
+<!-- CACH DUNG -->
+<section id="cach-dung">
+<h2>Huong dan su dung</h2>
+<p>Co 2 cach chinh de su dung Skill nay:</p>
+
+<h3>Cach 1: Tu dong (Khuyen dung)</h3>
+<p>Khi ban yeu cau Antigravity tao web, Skill se tu dong chay <code>--design-system</code> de tao toan bo he thong thiet ke. Ban chi can mo ta san pham:</p>
+<pre>"Tao trang landing page cho ung dung quan ly tai chinh ca nhan"
+"Thiet ke giao dien dashboard cho phan mem quan ly nha hang"
+"Tao website portfolio cho nhien anh gia"</pre>
+<p>Antigravity se tu dong: phan tich yeu cau, chon style + mau + font + UX rules, roi ap dung vao code.</p>
+
+<h3>Cach 2: Tim kiem thu cong (Nang cao)</h3>
+<p>Neu ban muon kiem soat chi tiet hon, dung lenh <code>search.py</code> voi cac tuy chon:</p>
+<pre># Tao design system day du
+python search.py "beauty spa wellness" --design-system -p "My Project"
+
+# Tim phong cach cu the
+python search.py "glassmorphism dark" --domain style
+
+# Tim bo mau theo nganh
+python search.py "healthcare medical" --domain color
+
+# Tim font phu hop
+python search.py "elegant luxury" --domain typography
+
+# Tim quy tac UX
+python search.py "animation accessibility" --domain ux</pre>
+
+<h3>Cac Domain (linh vuc) co the tim kiem</h3>
+<div class="table-wrap"><table>
+<thead><tr><th>Domain</th><th>Tim gi?</th><th>Vi du keyword</th></tr></thead>
+<tbody>
+<tr><td><code>style</code></td><td>Phong cach thiet ke UI</td><td>glassmorphism, minimalism, brutalism</td></tr>
+<tr><td><code>color</code></td><td>Bo mau theo loai san pham</td><td>saas, healthcare, beauty, fintech</td></tr>
+<tr><td><code>typography</code></td><td>Cap font Google Fonts</td><td>elegant, playful, professional</td></tr>
+<tr><td><code>ux</code></td><td>Quy tac trai nghiem nguoi dung</td><td>animation, accessibility, z-index</td></tr>
+<tr><td><code>landing</code></td><td>Cau truc trang, CTA</td><td>hero, testimonial, pricing</td></tr>
+<tr><td><code>chart</code></td><td>Bieu do va du lieu</td><td>trend, comparison, funnel</td></tr>
+<tr><td><code>product</code></td><td>Goi y theo loai san pham</td><td>SaaS, e-commerce, education</td></tr>
+</tbody>
+</table></div>
+</section>
 
 <!-- RULES -->
 <section id="rules">
-  <h2>Rule Categories by Priority</h2>
-  <p>8 categories duoc sap xep theo muc do anh huong den trai nghiem nguoi dung.</p>
-  <div class="table-wrap">
-  <table>
-    <thead><tr><th>#</th><th>Category</th><th>Impact</th><th>Domain</th></tr></thead>
-    <tbody>
-      <tr><td>1</td><td>Accessibility</td><td><span class="priority critical">CRITICAL</span></td><td><code>ux</code></td></tr>
-      <tr><td>2</td><td>Touch & Interaction</td><td><span class="priority critical">CRITICAL</span></td><td><code>ux</code></td></tr>
-      <tr><td>3</td><td>Performance</td><td><span class="priority high">HIGH</span></td><td><code>ux</code></td></tr>
-      <tr><td>4</td><td>Layout & Responsive</td><td><span class="priority high">HIGH</span></td><td><code>ux</code></td></tr>
-      <tr><td>5</td><td>Typography & Color</td><td><span class="priority medium">MEDIUM</span></td><td><code>typography, color</code></td></tr>
-      <tr><td>6</td><td>Animation</td><td><span class="priority medium">MEDIUM</span></td><td><code>ux</code></td></tr>
-      <tr><td>7</td><td>Style Selection</td><td><span class="priority medium">MEDIUM</span></td><td><code>style, product</code></td></tr>
-      <tr><td>8</td><td>Charts & Data</td><td><span class="priority low">LOW</span></td><td><code>chart</code></td></tr>
-    </tbody>
-  </table>
-  </div>
+<h2>8 Nhom Quy Tac Thiet Ke</h2>
+<p>Skill su dung 35+ quy tac duoc chia thanh 8 nhom, sap xep theo muc do quan trong. Khi thiet ke, cac quy tac CRITICAL se duoc uu tien ap dung truoc.</p>
+<div class="warn"><strong>Luu y:</strong> Cac quy tac nay khong chi la ly thuyet. Khi ban yeu cau tao web, Antigravity se tu dong kiem tra va ap dung chung vao code that.</div>
 </section>
 
-<!-- ACCESSIBILITY -->
 <section id="accessibility">
-  <h3>1. Accessibility (CRITICAL)</h3>
-  <div class="table-wrap"><table>
-    <thead><tr><th>Rule ID</th><th>Description</th></tr></thead>
-    <tbody>
-      <tr><td><code>color-contrast</code></td><td>Minimum 4.5:1 ratio for normal text</td></tr>
-      <tr><td><code>focus-states</code></td><td>Visible focus rings on interactive elements</td></tr>
-      <tr><td><code>alt-text</code></td><td>Descriptive alt text for meaningful images</td></tr>
-      <tr><td><code>aria-labels</code></td><td>aria-label for icon-only buttons</td></tr>
-      <tr><td><code>keyboard-nav</code></td><td>Tab order matches visual order</td></tr>
-      <tr><td><code>form-labels</code></td><td>Use label with for attribute</td></tr>
-    </tbody>
-  </table></div>
+<h3>1. Accessibility - Kha nang tiep can (CRITICAL)</h3>
+<p>Day la nhom quy tac quan trong nhat, dam bao moi nguoi deu co the su dung giao dien cua ban - ke ca nguoi khuyet tat.</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Quy tac</th><th>Y nghia & Cach lam</th></tr></thead>
+<tbody>
+<tr><td><code>color-contrast</code></td><td>Mau chu va mau nen phai co do tuong phan toi thieu 4.5:1. Vi du: chu trang tren nen den la OK, chu xam nhat tren nen trang la KHONG OK.</td></tr>
+<tr><td><code>focus-states</code></td><td>Khi nguoi dung dung phim Tab de di chuyen, phai thay ro phan tu nao dang duoc chon (vien sang xung quanh).</td></tr>
+<tr><td><code>alt-text</code></td><td>Moi hinh anh co y nghia phai co mo ta (thuoc tinh alt). Trinh doc man hinh se doc mo ta nay cho nguoi khuyet tat thi giac.</td></tr>
+<tr><td><code>form-labels</code></td><td>Moi o nhap lieu (input) phai co nhan (label) kem theo. Viet <code>&lt;label for="email"&gt;Email&lt;/label&gt;</code> thay vi chi de placeholder.</td></tr>
+<tr><td><code>keyboard-nav</code></td><td>Thu nghiem: ban co the dung trang web chi bang phim Tab va Enter khong? Neu khong duoc, can sua lai.</td></tr>
+</tbody>
+</table></div>
 </section>
 
-<!-- INTERACTION -->
 <section id="interaction">
-  <h3>2. Touch & Interaction (CRITICAL)</h3>
-  <div class="table-wrap"><table>
-    <thead><tr><th>Rule ID</th><th>Description</th></tr></thead>
-    <tbody>
-      <tr><td><code>touch-target-size</code></td><td>Minimum 44x44px touch targets</td></tr>
-      <tr><td><code>hover-vs-tap</code></td><td>Use click/tap for primary interactions</td></tr>
-      <tr><td><code>loading-buttons</code></td><td>Disable button during async operations</td></tr>
-      <tr><td><code>error-feedback</code></td><td>Clear error messages near problem</td></tr>
-      <tr><td><code>cursor-pointer</code></td><td>Add cursor-pointer to clickable elements</td></tr>
-    </tbody>
-  </table></div>
+<h3>2. Touch & Tuong tac (CRITICAL)</h3>
+<p>Nguoi dung mobile cham bang ngon tay, khong dung chuot. Cac quy tac nay dam bao tuong tac muot ma tren moi thiet bi.</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Quy tac</th><th>Y nghia & Cach lam</th></tr></thead>
+<tbody>
+<tr><td><code>touch-target</code></td><td>Moi nut bam, link phai co kich thuoc toi thieu 44x44px. Ngon tay lon hon con tro chuot rat nhieu.</td></tr>
+<tr><td><code>cursor-pointer</code></td><td>Moi phan tu co the click phai co <code>cursor: pointer</code> de nguoi dung biet no bam duoc.</td></tr>
+<tr><td><code>hover-feedback</code></td><td>Khi re chuot vao nut/card, phai co phan hoi truc quan: doi mau, bong do, hoac hieu ung nhe.</td></tr>
+<tr><td><code>loading-buttons</code></td><td>Khi dang xu ly (gui form, tai du lieu), phai vo hieu hoa nut va hien trang thai loading.</td></tr>
+<tr><td><code>error-feedback</code></td><td>Thong bao loi phai xuat hien gan cho bi loi, khong phai nho len hang dau trang.</td></tr>
+</tbody>
+</table></div>
 </section>
 
-<!-- PERFORMANCE -->
 <section id="performance">
-  <h3>3. Performance (HIGH)</h3>
-  <div class="table-wrap"><table>
-    <thead><tr><th>Rule ID</th><th>Description</th></tr></thead>
-    <tbody>
-      <tr><td><code>image-optimization</code></td><td>Use WebP, srcset, lazy loading</td></tr>
-      <tr><td><code>reduced-motion</code></td><td>Check prefers-reduced-motion</td></tr>
-      <tr><td><code>content-jumping</code></td><td>Reserve space for async content</td></tr>
-    </tbody>
-  </table></div>
+<h3>3-4. Hieu nang & Layout (HIGH)</h3>
+<p>Trang web nhanh va hien thi tot tren moi man hinh.</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Quy tac</th><th>Huong dan</th></tr></thead>
+<tbody>
+<tr><td><code>image-optimization</code></td><td>Dung dinh dang WebP, them <code>loading="lazy"</code> cho anh duoi fold. Dung srcset cho responsive images.</td></tr>
+<tr><td><code>reduced-motion</code></td><td>Kiem tra <code>prefers-reduced-motion</code> - tat animation cho nguoi nhay cam voi chuyen dong.</td></tr>
+<tr><td><code>viewport-meta</code></td><td>Luon co <code>&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;</code></td></tr>
+<tr><td><code>font-size</code></td><td>Chu tren mobile toi thieu 16px. Nho hon se kho doc va Safari se tu dong zoom vao.</td></tr>
+<tr><td><code>no-horizontal-scroll</code></td><td>KHONG BAO GIO de trang web cuon ngang tren mobile. Kiem tra bang <code>overflow-x: hidden</code>.</td></tr>
+</tbody>
+</table></div>
 </section>
 
-<!-- LAYOUT -->
-<section id="layout">
-  <h3>4. Layout & Responsive (HIGH)</h3>
-  <div class="table-wrap"><table>
-    <thead><tr><th>Rule ID</th><th>Description</th></tr></thead>
-    <tbody>
-      <tr><td><code>viewport-meta</code></td><td>width=device-width initial-scale=1</td></tr>
-      <tr><td><code>readable-font-size</code></td><td>Minimum 16px body text on mobile</td></tr>
-      <tr><td><code>horizontal-scroll</code></td><td>Ensure content fits viewport width</td></tr>
-      <tr><td><code>z-index-management</code></td><td>Define z-index scale (10, 20, 30, 50)</td></tr>
-    </tbody>
-  </table></div>
-</section>
-
-<!-- TYPO COLOR -->
 <section id="typo-color">
-  <h3>5. Typography & Color (MEDIUM)</h3>
-  <div class="table-wrap"><table>
-    <thead><tr><th>Rule ID</th><th>Description</th></tr></thead>
-    <tbody>
-      <tr><td><code>line-height</code></td><td>Use 1.5-1.75 for body text</td></tr>
-      <tr><td><code>line-length</code></td><td>Limit to 65-75 characters per line</td></tr>
-      <tr><td><code>font-pairing</code></td><td>Match heading/body font personalities</td></tr>
-    </tbody>
-  </table></div>
+<h3>5-6. Typography, Mau sac & Animation (MEDIUM)</h3>
+<div class="table-wrap"><table>
+<thead><tr><th>Quy tac</th><th>Huong dan</th></tr></thead>
+<tbody>
+<tr><td><code>line-height</code></td><td>Body text dung line-height 1.5-1.75. Qua sat hoac qua gian deu kho doc.</td></tr>
+<tr><td><code>line-length</code></td><td>Gioi han 65-75 ky tu moi dong. Qua dai se moi mat. Dung <code>max-width: 65ch</code>.</td></tr>
+<tr><td><code>font-pairing</code></td><td>Heading va Body nen khac "tinh cach": Heading dam, manh me + Body nhe, de doc.</td></tr>
+<tr><td><code>animation-duration</code></td><td>Micro-interaction: 150-300ms. Qua nhanh nguoi dung khong thay, qua cham gay kho chiu.</td></tr>
+<tr><td><code>transform-only</code></td><td>Chi animate <code>transform</code> va <code>opacity</code>. Tranh animate <code>width</code>, <code>height</code>, <code>margin</code> vi gay giat.</td></tr>
+</tbody>
+</table></div>
 </section>
 
-<!-- ANIMATION -->
 <section id="animation">
-  <h3>6. Animation (MEDIUM)</h3>
-  <div class="table-wrap"><table>
-    <thead><tr><th>Rule ID</th><th>Description</th></tr></thead>
-    <tbody>
-      <tr><td><code>duration-timing</code></td><td>Use 150-300ms for micro-interactions</td></tr>
-      <tr><td><code>transform-performance</code></td><td>Use transform/opacity, not width/height</td></tr>
-      <tr><td><code>loading-states</code></td><td>Skeleton screens or spinners</td></tr>
-    </tbody>
-  </table></div>
+<h3>7-8. Quy tac chung ve Icon & Bieu do</h3>
+<div class="table-wrap"><table>
+<thead><tr><th>Nen lam</th><th>Khong nen lam</th></tr></thead>
+<tbody>
+<tr><td>Dung SVG icons (Heroicons, Lucide)</td><td>Dung Emoji lam icon trong UI</td></tr>
+<tr><td>Icon thong nhat 1 bo duy nhat</td><td>Tron nhieu bo icon trong 1 trang</td></tr>
+<tr><td>Logo chinh xac (tu Simple Icons)</td><td>Tu ve hoac doan logo</td></tr>
+<tr><td>Bieu do phu hop voi loai du lieu</td><td>Dung Pie chart cho qua nhieu muc</td></tr>
+</tbody>
+</table></div>
 </section>
 
-<!-- STYLE SELECTION -->
-<section id="style-select">
-  <h3>7. Style Selection (MEDIUM)</h3>
-  <div class="table-wrap"><table>
-    <thead><tr><th>Rule ID</th><th>Description</th></tr></thead>
-    <tbody>
-      <tr><td><code>style-match</code></td><td>Match style to product type</td></tr>
-      <tr><td><code>consistency</code></td><td>Use same style across all pages</td></tr>
-      <tr><td><code>no-emoji-icons</code></td><td>Use SVG icons, not emojis</td></tr>
-    </tbody>
-  </table></div>
-</section>
-
-<!-- CHARTS -->
-<section id="charts-data">
-  <h3>8. Charts & Data (LOW)</h3>
-  <div class="table-wrap"><table>
-    <thead><tr><th>Rule ID</th><th>Description</th></tr></thead>
-    <tbody>
-      <tr><td><code>chart-type</code></td><td>Match chart type to data type</td></tr>
-      <tr><td><code>color-guidance</code></td><td>Use accessible color palettes</td></tr>
-      <tr><td><code>data-table</code></td><td>Provide table alternative for accessibility</td></tr>
-    </tbody>
-  </table></div>
-</section>
-
-<!-- STYLES DATABASE -->
+<!-- STYLES -->
 <section id="styles">
-  <h2>58 UI Styles Database</h2>
-  <p>Toan bo cac phong cach thiet ke, tu Classic den Modern, phu hop cho moi loai san pham.</p>
-  <div class="card-grid">
-    <div class="card"><div class="card-title">1. Minimalism & Swiss</div><div class="card-desc">Clean, spacious, functional. Enterprise apps, dashboards, SaaS.</div><div class="swatch-row"><span class="swatch" style="background:#000" data-hex="#000"></span><span class="swatch" style="background:#FFF;border-color:#ccc" data-hex="#FFF"></span><span class="swatch" style="background:#F5F1E8" data-hex="#F5F1E8"></span></div><div class="card-tag">Low Complexity</div></div>
-    <div class="card"><div class="card-title">2. Neumorphism</div><div class="card-desc">Soft UI, embossed. Health/wellness, meditation, fitness.</div><div class="swatch-row"><span class="swatch" style="background:#C8E0F4" data-hex="#C8E0F4"></span><span class="swatch" style="background:#F5E0E8" data-hex="#F5E0E8"></span><span class="swatch" style="background:#E8E8E8" data-hex="#E8E8E8"></span></div><div class="card-tag">Medium</div></div>
-    <div class="card"><div class="card-title">3. Glassmorphism</div><div class="card-desc">Frosted glass, translucent. Modern SaaS, financial dashboards.</div><div class="swatch-row"><span class="swatch" style="background:#0080FF" data-hex="#0080FF"></span><span class="swatch" style="background:#8B00FF" data-hex="#8B00FF"></span><span class="swatch" style="background:#FF1493" data-hex="#FF1493"></span></div><div class="card-tag">Medium</div></div>
-    <div class="card"><div class="card-title">4. Brutalism</div><div class="card-desc">Raw, stark, high contrast. Design portfolios, tech blogs.</div><div class="swatch-row"><span class="swatch" style="background:#FF0000" data-hex="#FF0000"></span><span class="swatch" style="background:#0000FF" data-hex="#0000FF"></span><span class="swatch" style="background:#FFFF00" data-hex="#FFFF00"></span></div><div class="card-tag">Low</div></div>
-    <div class="card"><div class="card-title">5. 3D & Hyperrealism</div><div class="card-desc">Depth, realistic textures, immersive. Gaming, product showcase.</div><div class="swatch-row"><span class="swatch" style="background:#001F3F" data-hex="#001F3F"></span><span class="swatch" style="background:#228B22" data-hex="#228B22"></span><span class="swatch" style="background:#FFD700" data-hex="#FFD700"></span></div><div class="card-tag">High</div></div>
-    <div class="card"><div class="card-title">6. Vibrant & Block-based</div><div class="card-desc">Bold, energetic, playful. Startups, gaming, social media.</div><div class="swatch-row"><span class="swatch" style="background:#39FF14" data-hex="#39FF14"></span><span class="swatch" style="background:#BF00FF" data-hex="#BF00FF"></span><span class="swatch" style="background:#FF1493" data-hex="#FF1493"></span></div><div class="card-tag">Medium</div></div>
-    <div class="card"><div class="card-title">7. Dark Mode (OLED)</div><div class="card-desc">Deep black, high contrast. Night-mode, coding platforms.</div><div class="swatch-row"><span class="swatch" style="background:#000" data-hex="#000"></span><span class="swatch" style="background:#121212" data-hex="#121212"></span><span class="swatch" style="background:#39FF14" data-hex="#39FF14"></span></div><div class="card-tag">Low</div></div>
-    <div class="card"><div class="card-title">8. Accessible & Ethical</div><div class="card-desc">WCAG AAA, high contrast. Government, healthcare, education.</div><div class="swatch-row"><span class="swatch" style="background:#000" data-hex="#000"></span><span class="swatch" style="background:#FFF;border-color:#ccc" data-hex="#FFF"></span></div><div class="card-tag">Low</div></div>
-    <div class="card"><div class="card-title">9. Claymorphism</div><div class="card-desc">Soft 3D, chunky, playful. Educational, children's apps.</div><div class="swatch-row"><span class="swatch" style="background:#FDBCB4" data-hex="#FDBCB4"></span><span class="swatch" style="background:#ADD8E6" data-hex="#ADD8E6"></span><span class="swatch" style="background:#98FF98" data-hex="#98FF98"></span></div><div class="card-tag">Medium</div></div>
-    <div class="card"><div class="card-title">10. Aurora UI</div><div class="card-desc">Northern Lights gradients, luminous. Creative agencies, SaaS.</div><div class="swatch-row"><span class="swatch" style="background:#0080FF" data-hex="#0080FF"></span><span class="swatch" style="background:#FF1493" data-hex="#FF1493"></span><span class="swatch" style="background:#00FFFF" data-hex="#00FFFF"></span></div><div class="card-tag">Medium</div></div>
-    <div class="card"><div class="card-title">11. Retro-Futurism</div><div class="card-desc">80s aesthetic, neon glow, synthwave. Gaming, entertainment.</div><div class="swatch-row"><span class="swatch" style="background:#0080FF" data-hex="#0080FF"></span><span class="swatch" style="background:#FF006E" data-hex="#FF006E"></span><span class="swatch" style="background:#1A1A2E" data-hex="#1A1A2E"></span></div><div class="card-tag">Medium</div></div>
-    <div class="card"><div class="card-title">12. Flat Design</div><div class="card-desc">2D, no shadows, clean lines. Cross-platform, startup MVPs.</div><div class="swatch-row"><span class="swatch" style="background:#FF0000" data-hex="#FF0000"></span><span class="swatch" style="background:#0000FF" data-hex="#0000FF"></span><span class="swatch" style="background:#00FF00" data-hex="#00FF00"></span></div><div class="card-tag">Low</div></div>
-  </div>
-  <p style="color:var(--text3);font-size:.82rem;font-style:italic">+ 46 styles nua: Neubrutalism, Bento Grid, Y2K, Cyberpunk, AI-Native UI, Liquid Glass, Parallax Storytelling, vv. Tim kiem qua CLI: <code>python search.py "keyword" --domain style</code></p>
+<h2>58 Phong Cach Thiet Ke UI</h2>
+<p>Skill co san 58 phong cach thiet ke (design style), moi phong cach da dinh nghia san: tong mau, hieu ung, do phuc tap, va loai san pham phu hop nhat. Duoi day la 12 phong cach pho bien nhat:</p>
+<div class="card-grid">
+<div class="card"><div class="card-title">Minimalism & Swiss</div><div class="card-desc">Gon gang, nhieu khoang trang, tap trung vao noi dung. Phu hop: SaaS, dashboard, ung dung doanh nghiep.</div><div class="card-tag">Do phuc tap: Thap</div></div>
+<div class="card"><div class="card-title">Glassmorphism</div><div class="card-desc">Hieu ung kinh mo, trong suot, backdrop-blur. Phu hop: landing page hien dai, dashboard tai chinh.</div><div class="card-tag">Do phuc tap: Trung binh</div></div>
+<div class="card"><div class="card-title">Neumorphism</div><div class="card-desc">Giao dien mem mai, hieu ung noi/chim. Phu hop: ung dung suc khoe, thien dinh, fitness.</div><div class="card-tag">Do phuc tap: Trung binh</div></div>
+<div class="card"><div class="card-title">Dark Mode (OLED)</div><div class="card-desc">Nen den sau, tuong phan cao, tiet kiem pin OLED. Phu hop: ung dung dev, coding platform.</div><div class="card-tag">Do phuc tap: Thap</div></div>
+<div class="card"><div class="card-title">Brutalism</div><div class="card-desc">Tho, manh, tuong phan cao, khong lam dep. Phu hop: portfolio sang tao, blog cong nghe.</div><div class="card-tag">Do phuc tap: Thap</div></div>
+<div class="card"><div class="card-title">Aurora UI</div><div class="card-desc">Gradient ruc ro nhu cuc quang, phat sang. Phu hop: agency sang tao, SaaS cao cap.</div><div class="card-tag">Do phuc tap: Trung binh</div></div>
+<div class="card"><div class="card-title">Retro-Futurism</div><div class="card-desc">Phong cach thap nien 80s, neon, synthwave. Phu hop: gaming, giai tri, su kien.</div><div class="card-tag">Do phuc tap: Trung binh</div></div>
+<div class="card"><div class="card-title">Bento Grid</div><div class="card-desc">Luoi kieu hop com Nhat, nhieu o vuong goc khac nhau. Phu hop: portfolio, trang gioi thieu.</div><div class="card-tag">Do phuc tap: Trung binh</div></div>
+<div class="card"><div class="card-title">3D & Hyperrealism</div><div class="card-desc">Chieu sau, texture that, nhap vai. Phu hop: gaming, trang san pham cao cap.</div><div class="card-tag">Do phuc tap: Cao</div></div>
+<div class="card"><div class="card-title">Claymorphism</div><div class="card-desc">3D mem, tron, ngo nghinh. Phu hop: giao duc, ung dung tre em, onboarding.</div><div class="card-tag">Do phuc tap: Trung binh</div></div>
+<div class="card"><div class="card-title">Flat Design</div><div class="card-desc">Phang, khong bong, duong net ro rang. Phu hop: MVP, cross-platform, ung dung don gian.</div><div class="card-tag">Do phuc tap: Thap</div></div>
+<div class="card"><div class="card-title">Accessible & Ethical</div><div class="card-desc">Chuan WCAG AAA, tuong phan cao nhat. Phu hop: chinh phu, y te, giao duc.</div><div class="card-tag">Do phuc tap: Thap</div></div>
+</div>
+<p style="color:var(--text3);font-size:.85rem">Va con 46 phong cach nua: Neubrutalism, Y2K, Cyberpunk, AI-Native UI, Liquid Glass, Parallax Storytelling, v.v.</p>
 </section>
 
-<!-- COLOR PALETTES -->
+<!-- COLORS -->
 <section id="colors">
-  <h2>96 Color Palettes by Product Type</h2>
-  <p>Moi loai san pham co bo mau rieng: Primary, Secondary, CTA, Background, Text, Border.</p>
-  <div class="table-wrap"><table>
-    <thead><tr><th>Product Type</th><th>Primary</th><th>CTA</th><th>Background</th><th>Text</th><th>Notes</th></tr></thead>
-    <tbody>
-      <tr><td>SaaS General</td><td><span class="swatch" style="background:#2563EB;display:inline-block;width:20px;height:20px;vertical-align:middle" data-hex="#2563EB"></span> #2563EB</td><td>#F97316</td><td>#F8FAFC</td><td>#1E293B</td><td>Trust blue + accent contrast</td></tr>
-      <tr><td>E-commerce Luxury</td><td><span class="swatch" style="background:#1C1917;display:inline-block;width:20px;height:20px;vertical-align:middle" data-hex="#1C1917"></span> #1C1917</td><td>#CA8A04</td><td>#FAFAF9</td><td>#0C0A09</td><td>Premium + minimal accent</td></tr>
-      <tr><td>Healthcare App</td><td><span class="swatch" style="background:#0891B2;display:inline-block;width:20px;height:20px;vertical-align:middle" data-hex="#0891B2"></span> #0891B2</td><td>#059669</td><td>#ECFEFF</td><td>#164E63</td><td>Calm blue + health green</td></tr>
-      <tr><td>Gaming</td><td><span class="swatch" style="background:#7C3AED;display:inline-block;width:20px;height:20px;vertical-align:middle" data-hex="#7C3AED"></span> #7C3AED</td><td>#F43F5E</td><td>#0F0F23</td><td>#E2E8F0</td><td>Vibrant + neon + immersive</td></tr>
-      <tr><td>Fintech/Crypto</td><td><span class="swatch" style="background:#F59E0B;display:inline-block;width:20px;height:20px;vertical-align:middle" data-hex="#F59E0B"></span> #F59E0B</td><td>#8B5CF6</td><td>#0F172A</td><td>#F8FAFC</td><td>Dark tech + trust + vibrant</td></tr>
-      <tr><td>Beauty/Spa</td><td><span class="swatch" style="background:#10B981;display:inline-block;width:20px;height:20px;vertical-align:middle" data-hex="#10B981"></span> #10B981</td><td>#8B5CF6</td><td>#ECFDF5</td><td>#064E3B</td><td>Soft pastels + Gold accents</td></tr>
-      <tr><td>AI/Chatbot</td><td><span class="swatch" style="background:#7C3AED;display:inline-block;width:20px;height:20px;vertical-align:middle" data-hex="#7C3AED"></span> #7C3AED</td><td>#06B6D4</td><td>#FAF5FF</td><td>#1E1B4B</td><td>Neutral + AI Purple</td></tr>
-      <tr><td>Cybersecurity</td><td><span class="swatch" style="background:#00FF41;display:inline-block;width:20px;height:20px;vertical-align:middle" data-hex="#00FF41"></span> #00FF41</td><td>#00FF41</td><td>#000</td><td>#E0E0E0</td><td>Matrix Green + Terminal feel</td></tr>
-    </tbody>
-  </table></div>
-  <p style="color:var(--text3);font-size:.82rem;font-style:italic">+ 88 palettes: Restaurant, Fitness, Real Estate, Wedding, Legal, Automotive, vv. Tim kiem: <code>python search.py "your product" --domain color</code></p>
+<h2>96 Bo Mau Theo San Pham</h2>
+<p>Moi loai san pham co bo mau rieng, da duoc nghien cuu de phu hop voi tam ly nguoi dung va nganh. Duoi day la mot so vi du tieu bieu:</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Loai san pham</th><th>Primary</th><th>CTA</th><th>Ghi chu</th></tr></thead>
+<tbody>
+<tr><td>SaaS chung</td><td><span class="swatch" style="background:#2563EB"></span> #2563EB</td><td>#F97316</td><td>Mau xanh tao su tin tuong, cam lam noi bat nut hanh dong</td></tr>
+<tr><td>E-commerce cao cap</td><td><span class="swatch" style="background:#1C1917"></span> #1C1917</td><td>#CA8A04</td><td>Den + vang sang trong, toi gian nhung premium</td></tr>
+<tr><td>Y te / Suc khoe</td><td><span class="swatch" style="background:#0891B2"></span> #0891B2</td><td>#059669</td><td>Xanh duong nhe tao cam giac binh yen, xanh la the hien suc khoe</td></tr>
+<tr><td>Gaming</td><td><span class="swatch" style="background:#7C3AED"></span> #7C3AED</td><td>#F43F5E</td><td>Tim + hong nong, nang luong cao, hap dan gioi tre</td></tr>
+<tr><td>Fintech / Crypto</td><td><span class="swatch" style="background:#F59E0B"></span> #F59E0B</td><td>#8B5CF6</td><td>Vang nang dong + tim cong nghe, cam giac doi moi tai chinh</td></tr>
+<tr><td>AI / Chatbot</td><td><span class="swatch" style="background:#7C3AED"></span> #7C3AED</td><td>#06B6D4</td><td>Tim AI + cyan tuong lai, pho bien trong san pham AI</td></tr>
+<tr><td>Giao duc</td><td><span class="swatch" style="background:#2563EB"></span> #2563EB</td><td>#F59E0B</td><td>Xanh duong than thien + vang nang luong, tao cam giac tich cuc</td></tr>
+<tr><td>Nha hang / F&B</td><td><span class="swatch" style="background:#DC2626"></span> #DC2626</td><td>#F59E0B</td><td>Do va vang kich thich su thich, tang cam giac ngon mieng</td></tr>
+</tbody>
+</table></div>
+<p style="color:var(--text3);font-size:.85rem">Con 88 bo mau: Fitness, Bat dong san, Wedding, Luat, Oto, Du lich, Music, v.v.</p>
 </section>
 
-<!-- TYPOGRAPHY -->
-<section id="typography">
-  <h2>57 Font Pairings (Google Fonts)</h2>
-  <p>Moi cap font duoc chon dua tren mood, industry, va do doc - kem theo Google Fonts URL va Tailwind config.</p>
-  <div class="table-wrap"><table>
-    <thead><tr><th>#</th><th>Name</th><th>Heading</th><th>Body</th><th>Best For</th></tr></thead>
-    <tbody>
-      <tr><td>1</td><td>Classic Elegant</td><td>Playfair Display</td><td>Inter</td><td>Luxury, fashion, spa, editorial</td></tr>
-      <tr><td>2</td><td>Modern Professional</td><td>Poppins</td><td>Open Sans</td><td>SaaS, corporate, startups</td></tr>
-      <tr><td>3</td><td>Tech Startup</td><td>Space Grotesk</td><td>DM Sans</td><td>Tech, AI products, dev tools</td></tr>
-      <tr><td>5</td><td>Minimal Swiss</td><td>Inter</td><td>Inter</td><td>Dashboards, admin, documentation</td></tr>
-      <tr><td>7</td><td>Bold Statement</td><td>Bebas Neue</td><td>Source Sans 3</td><td>Marketing, portfolios, events</td></tr>
-      <tr><td>9</td><td>Developer Mono</td><td>JetBrains Mono</td><td>IBM Plex Sans</td><td>Dev tools, documentation, CLI</td></tr>
-      <tr><td>13</td><td>Friendly SaaS</td><td>Plus Jakarta Sans</td><td>Plus Jakarta Sans</td><td>SaaS, web apps, dashboards</td></tr>
-      <tr><td>16</td><td>Corporate Trust</td><td>Lexend</td><td>Source Sans 3</td><td>Enterprise, government, healthcare</td></tr>
-      <tr><td>21</td><td>Vietnamese Friendly</td><td>Be Vietnam Pro</td><td>Noto Sans</td><td>Vietnamese sites, multilingual</td></tr>
-      <tr><td>36</td><td>Crypto/Web3</td><td>Orbitron</td><td>Exo 2</td><td>Crypto, NFT, blockchain</td></tr>
-      <tr><td>43</td><td>AI-Native</td><td>Space Grotesk</td><td>DM Sans</td><td>AI products, tech startups</td></tr>
-      <tr><td>48</td><td>Accessibility First</td><td>Atkinson Hyperlegible</td><td>Atkinson Hyperlegible</td><td>WCAG, dyslexia-friendly</td></tr>
-    </tbody>
-  </table></div>
-  <p style="color:var(--text3);font-size:.82rem;font-style:italic">+ 45 pairings: Wedding, Gaming, Pixel Retro, Japanese, Korean, Arabic, vv. Tim kiem: <code>python search.py "elegant luxury" --domain typography</code></p>
+<!-- FONTS -->
+<section id="fonts">
+<h2>57 Cap Font tu Google Fonts</h2>
+<p>Moi cap font (Heading + Body) duoc chon dua tren mood (cam xuc) va nganh nghe. Tat ca deu la Google Fonts mien phi, kem theo link import san.</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Ten</th><th>Heading</th><th>Body</th><th>Phu hop cho</th></tr></thead>
+<tbody>
+<tr><td>Classic Elegant</td><td>Playfair Display</td><td>Inter</td><td>Thuong hieu cao cap, thoi trang, spa</td></tr>
+<tr><td>Modern Professional</td><td>Poppins</td><td>Open Sans</td><td>SaaS, doanh nghiep, startup</td></tr>
+<tr><td>Tech Startup</td><td>Space Grotesk</td><td>DM Sans</td><td>Cong nghe, AI, dev tools</td></tr>
+<tr><td>Bold Statement</td><td>Bebas Neue</td><td>Source Sans 3</td><td>Marketing, portfolio, su kien</td></tr>
+<tr><td>Developer Mono</td><td>JetBrains Mono</td><td>IBM Plex Sans</td><td>Dev docs, CLI, coding platform</td></tr>
+<tr><td>Vietnamese Friendly</td><td>Be Vietnam Pro</td><td>Noto Sans</td><td>Trang tieng Viet, da ngon ngu</td></tr>
+<tr><td>Corporate Trust</td><td>Lexend</td><td>Source Sans 3</td><td>Doanh nghiep, chinh phu, y te</td></tr>
+<tr><td>Crypto/Web3</td><td>Orbitron</td><td>Exo 2</td><td>Crypto, NFT, blockchain</td></tr>
+<tr><td>AI-Native</td><td>Space Grotesk</td><td>DM Sans</td><td>San pham AI, tech startup</td></tr>
+<tr><td>Accessibility First</td><td>Atkinson Hyperlegible</td><td>Atkinson Hyperlegible</td><td>WCAG, nguoi kho doc</td></tr>
+</tbody>
+</table></div>
+<div class="tip"><strong>Meo:</strong> Moi cap font deu kem theo URL import Google Fonts va config Tailwind CSS. Khi Antigravity tao web, no se tu dong them link import vao <code>&lt;head&gt;</code>.</div>
 </section>
 
 <!-- STACKS -->
 <section id="stacks">
-  <h2>11 Technology Stacks</h2>
-  <p>Best practices cho tung stack, tu HTML-Tailwind den SwiftUI va Flutter.</p>
-  <div class="card-grid">
-    <div class="card"><div class="card-title">HTML + Tailwind</div><div class="card-desc">Tailwind utilities, responsive, a11y. DEFAULT stack.</div><div class="card-tag">Default</div></div>
-    <div class="card"><div class="card-title">React</div><div class="card-desc">State, hooks, performance, patterns.</div><div class="card-tag">Web</div></div>
-    <div class="card"><div class="card-title">Next.js</div><div class="card-desc">SSR, routing, images, API routes.</div><div class="card-tag">Web</div></div>
-    <div class="card"><div class="card-title">Vue</div><div class="card-desc">Composition API, Pinia, Vue Router.</div><div class="card-tag">Web</div></div>
-    <div class="card"><div class="card-title">Svelte</div><div class="card-desc">Runes, stores, SvelteKit.</div><div class="card-tag">Web</div></div>
-    <div class="card"><div class="card-title">Nuxt.js</div><div class="card-desc">Vue SSR, auto-imports, Nitro.</div><div class="card-tag">Web</div></div>
-    <div class="card"><div class="card-title">shadcn/ui</div><div class="card-desc">Components, theming, forms.</div><div class="card-tag">Component Lib</div></div>
-    <div class="card"><div class="card-title">SwiftUI</div><div class="card-desc">Views, State, Navigation, Animation.</div><div class="card-tag">iOS</div></div>
-    <div class="card"><div class="card-title">React Native</div><div class="card-desc">Components, Navigation, Lists.</div><div class="card-tag">Mobile</div></div>
-    <div class="card"><div class="card-title">Flutter</div><div class="card-desc">Widgets, State, Layout, Theming.</div><div class="card-tag">Mobile</div></div>
-    <div class="card"><div class="card-title">Nuxt UI</div><div class="card-desc">Nuxt component library, theming.</div><div class="card-tag">Component Lib</div></div>
-  </div>
+<h2>11 Tech Stack duoc ho tro</h2>
+<p>Moi stack co file huong dan rieng voi cac quy tac dac thu. Skill se tu dong nhan dien stack ban dang dung va ap dung dung quy tac.</p>
+<div class="card-grid">
+<div class="card"><div class="card-title">HTML + Tailwind</div><div class="card-desc">Stack mac dinh. Huong dan ve utility classes, responsive, accessibility.</div><div class="card-tag">Mac dinh</div></div>
+<div class="card"><div class="card-title">React</div><div class="card-desc">State management, hooks, performance optimization, component patterns.</div><div class="card-tag">Web</div></div>
+<div class="card"><div class="card-title">Next.js</div><div class="card-desc">SSR/SSG, routing, image optimization, API routes.</div><div class="card-tag">Web</div></div>
+<div class="card"><div class="card-title">Vue + Nuxt</div><div class="card-desc">Composition API, Pinia, Vue Router, auto-imports.</div><div class="card-tag">Web</div></div>
+<div class="card"><div class="card-title">Svelte</div><div class="card-desc">Runes, stores, SvelteKit, progressive enhancement.</div><div class="card-tag">Web</div></div>
+<div class="card"><div class="card-title">shadcn/ui</div><div class="card-desc">Component library, theming, form validation, accessible patterns.</div><div class="card-tag">Component Lib</div></div>
+<div class="card"><div class="card-title">SwiftUI</div><div class="card-desc">iOS native: Views, State, Navigation, Animation.</div><div class="card-tag">Mobile</div></div>
+<div class="card"><div class="card-title">React Native</div><div class="card-desc">Cross-platform mobile: Components, Navigation, Lists.</div><div class="card-tag">Mobile</div></div>
+<div class="card"><div class="card-title">Flutter</div><div class="card-desc">Dart framework: Widgets, State, Layout, Theming.</div><div class="card-tag">Mobile</div></div>
+</div>
 </section>
 
 <!-- WORKFLOW -->
 <section id="workflow">
-  <h2>4-Step Workflow</h2>
-  <h4>Step 1: Analyze User Requirements</h4>
-  <p>Xac dinh: Product type, Style keywords, Industry, Tech stack.</p>
-  <h4>Step 2: Generate Design System (REQUIRED)</h4>
-  <pre>python search.py "beauty spa wellness" --design-system -p "My Project"</pre>
-  <p>Lenh nay search 5 domains song song (product, style, color, landing, typography) va tra ve complete design system.</p>
-  <h4>Step 3: Supplement with Detailed Searches</h4>
-  <pre>python search.py "glassmorphism dark" --domain style
-python search.py "elegant luxury" --domain typography
-python search.py "animation accessibility" --domain ux</pre>
-  <h4>Step 4: Stack Guidelines</h4>
-  <pre>python search.py "layout responsive form" --stack html-tailwind</pre>
+<h2>Quy Trinh 4 Buoc</h2>
+<p>Day la quy trinh ma Antigravity thuc hien khi ban yeu cau thiet ke giao dien:</p>
+<h4>Buoc 1: Phan tich yeu cau</h4>
+<p>Xac dinh loai san pham, keyword phong cach, nganh nghe, va tech stack dang dung.</p>
+<h4>Buoc 2: Tao Design System (bat buoc)</h4>
+<p>Chay lenh <code>--design-system</code> de search dong thoi 5 linh vuc: product, style, color, landing, typography. Ket qua la mot bo thiet ke day du.</p>
+<h4>Buoc 3: Bo sung tim kiem chi tiet</h4>
+<p>Neu can tinh chinh, tim kiem them theo tung domain cu the (style, color, typography, ux).</p>
+<h4>Buoc 4: Ap dung quy tac theo Stack</h4>
+<p>Tu dong ap dung cac quy tac rieng cua stack dang su dung (React, Next.js, Flutter...).</p>
 </section>
 
-<!-- SEARCH REF -->
-<section id="search-ref">
-  <h2>Search Reference</h2>
-  <h3>Available Domains</h3>
-  <div class="table-wrap"><table>
-    <thead><tr><th>Domain</th><th>Use For</th><th>Example Keywords</th></tr></thead>
-    <tbody>
-      <tr><td><code>product</code></td><td>Product type recommendations</td><td>SaaS, e-commerce, healthcare</td></tr>
-      <tr><td><code>style</code></td><td>UI styles, colors, effects</td><td>glassmorphism, minimalism, dark mode</td></tr>
-      <tr><td><code>typography</code></td><td>Font pairings, Google Fonts</td><td>elegant, playful, professional</td></tr>
-      <tr><td><code>color</code></td><td>Color palettes by product</td><td>saas, healthcare, beauty, fintech</td></tr>
-      <tr><td><code>landing</code></td><td>Page structure, CTA strategies</td><td>hero, testimonial, pricing</td></tr>
-      <tr><td><code>chart</code></td><td>Chart types, libraries</td><td>trend, comparison, funnel, pie</td></tr>
-      <tr><td><code>ux</code></td><td>Best practices, anti-patterns</td><td>animation, accessibility, z-index</td></tr>
-      <tr><td><code>react</code></td><td>React/Next.js performance</td><td>waterfall, bundle, suspense</td></tr>
-      <tr><td><code>web</code></td><td>Web interface guidelines</td><td>aria, focus, keyboard, semantic</td></tr>
-      <tr><td><code>prompt</code></td><td>AI prompts, CSS keywords</td><td>(style name)</td></tr>
-    </tbody>
-  </table></div>
-</section>
+<!-- VI DU -->
+<section id="vi-du">
+<h2>Vi Du Cu The</h2>
+<h3>Vi du 1: Tao landing page cho spa</h3>
+<pre># Ban chi can noi:
+"Tao trang landing page cho tiem spa cao cap, phong cach sang trong"
 
-<!-- COMMON RULES -->
-<section id="common-rules">
-  <h2>Common Rules for Professional UI</h2>
-  <h3>Icons & Visual</h3>
-  <div class="table-wrap"><table>
-    <thead><tr><th>Rule</th><th>Do</th><th>Don't</th></tr></thead>
-    <tbody>
-      <tr><td>No emoji icons</td><td>Use SVG icons (Heroicons, Lucide)</td><td>Emojis as UI icons</td></tr>
-      <tr><td>Stable hover</td><td>Use color/opacity transitions</td><td>Scale transforms that shift layout</td></tr>
-      <tr><td>Correct logos</td><td>Research official SVG</td><td>Guess or use incorrect paths</td></tr>
-      <tr><td>Icon sizing</td><td>Fixed viewBox (24x24) w-6 h-6</td><td>Mix different sizes randomly</td></tr>
-    </tbody>
-  </table></div>
-  <h3>Interaction & Cursor</h3>
-  <div class="table-wrap"><table>
-    <thead><tr><th>Rule</th><th>Do</th><th>Don't</th></tr></thead>
-    <tbody>
-      <tr><td>cursor-pointer</td><td>All clickable/hoverable cards</td><td>Default cursor on interactive</td></tr>
-      <tr><td>Hover feedback</td><td>Visual feedback (color, shadow)</td><td>No indication of interactivity</td></tr>
-      <tr><td>Smooth transitions</td><td>transition-colors duration-200</td><td>Instant or too slow (>500ms)</td></tr>
-    </tbody>
-  </table></div>
-  <h3>Light/Dark Mode</h3>
-  <div class="table-wrap"><table>
-    <thead><tr><th>Rule</th><th>Do</th><th>Don't</th></tr></thead>
-    <tbody>
-      <tr><td>Glass card light</td><td>bg-white/80 or higher</td><td>bg-white/10 (transparent)</td></tr>
-      <tr><td>Text contrast</td><td>#0F172A (slate-900)</td><td>#94A3B8 (slate-400) for body</td></tr>
-      <tr><td>Border visibility</td><td>border-gray-200 in light</td><td>border-white/10 (invisible)</td></tr>
-    </tbody>
-  </table></div>
+# Antigravity se tu dong:
+1. Chon style: Glassmorphism hoac Minimalism
+2. Chon mau: Vang gold + trang kem + xanh la nhat
+3. Chon font: Playfair Display (heading) + Inter (body)
+4. Ap dung: touch target 44px, contrast 4.5:1, lazy loading...</pre>
+
+<h3>Vi du 2: Thiet ke dashboard SaaS</h3>
+<pre># Ban noi:
+"Thiet ke trang dashboard cho phan mem quan ly du an"
+
+# Antigravity se:
+1. Chon style: Dark Mode hoac Minimalism
+2. Chon mau: Xanh duong #2563EB + cam #F97316 cho CTA
+3. Chon font: Plus Jakarta Sans (chuyen dung cho SaaS)
+4. Ap dung: z-index scale, skeleton loading, responsive grid...</pre>
 </section>
 
 <!-- CHECKLIST -->
 <section id="checklist">
-  <h2>Pre-Delivery Checklist</h2>
-  <h3>Visual Quality</h3>
-  <ul class="checklist">
-    <li>No emojis used as icons (use SVG instead)</li>
-    <li>All icons from consistent icon set (Heroicons/Lucide)</li>
-    <li>Brand logos are correct (verified from Simple Icons)</li>
-    <li>Hover states don't cause layout shift</li>
-    <li>Use theme colors directly (bg-primary) not var() wrapper</li>
-  </ul>
-  <h3>Interaction</h3>
-  <ul class="checklist">
-    <li>All clickable elements have cursor-pointer</li>
-    <li>Hover states provide clear visual feedback</li>
-    <li>Transitions are smooth (150-300ms)</li>
-    <li>Focus states visible for keyboard navigation</li>
-  </ul>
-  <h3>Light/Dark Mode</h3>
-  <ul class="checklist">
-    <li>Light mode text has sufficient contrast (4.5:1 minimum)</li>
-    <li>Glass/transparent elements visible in light mode</li>
-    <li>Borders visible in both modes</li>
-    <li>Test both modes before delivery</li>
-  </ul>
-  <h3>Layout</h3>
-  <ul class="checklist">
-    <li>Floating elements have proper spacing from edges</li>
-    <li>No content hidden behind fixed navbars</li>
-    <li>Responsive at 375px, 768px, 1024px, 1440px</li>
-    <li>No horizontal scroll on mobile</li>
-  </ul>
-  <h3>Accessibility</h3>
-  <ul class="checklist">
-    <li>All images have alt text</li>
-    <li>Form inputs have labels</li>
-    <li>Color is not the only indicator</li>
-    <li>prefers-reduced-motion respected</li>
-  </ul>
+<h2>Checklist Truoc Khi Ship</h2>
+<p>Danh sach kiem tra cuoi cung truoc khi giao san pham cho khach hang hoac deploy len production:</p>
+<h3>Chat luong hinh anh</h3>
+<ul class="checklist">
+<li>Khong dung emoji lam icon (phai dung SVG)</li>
+<li>Tat ca icon cung 1 bo (Heroicons hoac Lucide)</li>
+<li>Logo thuong hieu chinh xac</li>
+<li>Hover khong lam xo layout</li>
+</ul>
+<h3>Tuong tac</h3>
+<ul class="checklist">
+<li>Moi phan tu click duoc co cursor-pointer</li>
+<li>Hover co phan hoi truc quan ro rang</li>
+<li>Transition muot (150-300ms)</li>
+<li>Focus state hien thi cho keyboard nav</li>
+</ul>
+<h3>Light/Dark Mode</h3>
+<ul class="checklist">
+<li>Chu co do tuong phan du (4.5:1 toi thieu)</li>
+<li>Card/glass hien thi tot tren ca 2 mode</li>
+<li>Vien (border) nhin thay duoc tren ca 2 mode</li>
+<li>Da test thu ca 2 mode truoc khi giao</li>
+</ul>
+<h3>Layout & Responsive</h3>
+<ul class="checklist">
+<li>Khong bi noi dung bi che boi navbar co dinh</li>
+<li>Responsive tot tai 375px, 768px, 1024px, 1440px</li>
+<li>Khong cuon ngang tren mobile</li>
+<li>Touch target toi thieu 44x44px</li>
+</ul>
+<h3>Accessibility</h3>
+<ul class="checklist">
+<li>Moi hinh anh co alt text</li>
+<li>O nhap lieu co label</li>
+<li>Mau sac khong phai dau hieu duy nhat</li>
+<li>Ton trong prefers-reduced-motion</li>
+</ul>
 </section>
 
 </main>
 </div>
 
-<!-- BOTTOM NAV (mobile) -->
 <nav class="bottom-nav">
-  <a href="#overview"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg>Home</a>
-  <a href="#rules"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>Rules</a>
-  <a href="#styles"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>Styles</a>
-  <a href="#workflow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>Workflow</a>
+<a href="#gioi-thieu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg>Home</a>
+<a href="#rules"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>Quy tac</a>
+<a href="#styles"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>Styles</a>
+<a href="#workflow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>Workflow</a>
 </nav>
 
-<!-- JUMP TO TOP -->
-<button class="jump-top" id="jumpTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Jump to top">
-  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"/></svg>
+<button class="jump-top" id="jumpTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Len dau trang">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"/></svg>
 </button>
 
 <script>
-// Scroll tracking for sidebar
 const sections=document.querySelectorAll('section[id],div[id]');
 const sidebarLinks=document.querySelectorAll('.sidebar a');
 const jumpTop=document.getElementById('jumpTop');
 let ticking=false;
 window.addEventListener('scroll',()=>{
-  if(!ticking){requestAnimationFrame(()=>{
-    const scrollY=window.scrollY;
-    jumpTop.classList.toggle('show',scrollY>400);
-    let current='';
-    sections.forEach(s=>{if(scrollY>=s.offsetTop-120)current=s.id});
-    sidebarLinks.forEach(a=>{
-      a.classList.toggle('active',a.getAttribute('href')==='#'+current);
-    });
-    ticking=false;
-  });ticking=true;}
+if(!ticking){requestAnimationFrame(()=>{
+const scrollY=window.scrollY;
+jumpTop.classList.toggle('show',scrollY>400);
+let current='';
+sections.forEach(s=>{if(scrollY>=s.offsetTop-120)current=s.id});
+sidebarLinks.forEach(a=>{a.classList.toggle('active',a.getAttribute('href')==='#'+current)});
+ticking=false;
+});ticking=true;}
 });
-// Close mobile nav on link click
 document.querySelectorAll('.nav-links a').forEach(a=>{
-  a.addEventListener('click',()=>document.getElementById('navLinks').classList.remove('open'));
+a.addEventListener('click',()=>document.getElementById('navLinks').classList.remove('open'));
 });
 </script>
 </body>
