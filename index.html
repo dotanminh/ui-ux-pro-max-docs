@@ -49,8 +49,8 @@ footer a:hover{text-decoration:underline}
 .content{margin-left:260px;flex:1;padding:40px 48px 80px;max-width:960px}
 .hero{padding:40px 0 32px}
 .hero-badge{display:inline-flex;align-items:center;gap:6px;background:rgba(129,140,248,0.12);color:var(--accent);padding:6px 14px;border-radius:20px;font-size:.8rem;font-weight:500;margin-bottom:16px}
-.hero h1{font-family:var(--font-h);font-size:2.2rem;font-weight:700;line-height:1.3;margin-bottom:12px;background:linear-gradient(135deg,var(--text),var(--accent));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
-.hero p{color:var(--text2);font-size:1.05rem;max-width:640px}
+.hero h1{font-family:var(--font-h);font-size:1.7rem;font-weight:700;line-height:1.3;margin-bottom:12px;white-space:nowrap;text-transform:uppercase;letter-spacing:.03em;background:linear-gradient(135deg,#fff 0%,#fbbf24 60%,#fff 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.hero p{color:var(--text2);font-size:1.05rem}
 .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:28px 0 40px}
 .stat{background:var(--glass2);border:1px solid var(--border);border-radius:var(--radius);padding:16px;text-align:center}
 .stat-num{font-family:var(--font-h);font-size:1.6rem;font-weight:700;color:var(--accent)}
@@ -91,7 +91,7 @@ pre{background:var(--bg2);border:1px solid var(--border);border-radius:var(--rad
 .nav-hamburger{display:block}
 .sidebar{display:none}
 .content{margin-left:0;padding:24px 16px 90px}
-.hero h1{font-size:1.5rem}
+.hero h1{font-size:1rem;white-space:normal}
 .stats{grid-template-columns:repeat(2,1fr)}
 .card-grid{grid-template-columns:1fr}
 .compiler-section{flex-direction:column;text-align:center;gap:12px}
@@ -152,22 +152,8 @@ footer{margin-left:0;padding:24px 16px}
 <main class="content">
 
 <div class="hero" id="gioi-thieu">
-<div class="hero-badge"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>Antigravity Skill</div>
 <h1>UI/UX Pro Max - Hướng Dẫn Thiết Kế Chuyên Nghiệp</h1>
 <p>Đây là tài liệu hướng dẫn sử dụng Skill UI/UX Pro Max - bộ công cụ giúp bạn thiết kế giao diện web và mobile theo chuẩn chuyên nghiệp, tự động đề xuất phong cách, màu sắc, font chữ và các quy tắc UX.</p>
-</div>
-
-<div class="compiler-section">
-<div class="compiler-avatar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
-<div class="compiler-info">
-<h4>Biên soạn bởi Minh Đỗ</h4>
-<p>Tài liệu hướng dẫn Skill UI/UX Pro Max dành cho nền tảng Antigravity. Nội dung được biên soạn dựa trên bộ dữ liệu gốc của Skill bao gồm 58 styles, 96 bộ màu, 57 cặp font và 35+ quy tắc UX.</p>
-<div class="compiler-links">
-<a href="https://facebook.com/dotanminh" target="_blank" class="compiler-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>Facebook</a>
-<a href="https://github.com/nextlevelbuilder/ui-ux-pro-max-skill" target="_blank" class="compiler-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>Mã nguồn GitHub</a>
-<a href="https://zalo.me/g/igkywu632" target="_blank" class="compiler-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>Cộng đồng Zalo</a>
-</div>
-</div>
 </div>
 
 <div class="stats" id="stats-section">
@@ -462,11 +448,24 @@ python search.py "animation accessibility" --domain ux</pre>
 </ul>
 </section>
 
+<div class="compiler-section">
+<div class="compiler-avatar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
+<div class="compiler-info">
+<h4>Biên soạn bởi Minh Đỗ</h4>
+<p>Tài liệu hướng dẫn Skill UI/UX Pro Max dành cho nền tảng Antigravity. Nội dung được biên soạn dựa trên bộ dữ liệu gốc của Skill bao gồm 58 styles, 96 bộ màu, 57 cặp font và 35+ quy tắc UX.</p>
+<div class="compiler-links">
+<a href="https://facebook.com/dotanminh" target="_blank" class="compiler-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>Facebook</a>
+<a href="https://github.com/nextlevelbuilder/ui-ux-pro-max-skill" target="_blank" class="compiler-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>Mã nguồn GitHub</a>
+<a href="https://zalo.me/g/igkywu632" target="_blank" class="compiler-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>Cộng đồng Zalo</a>
+</div>
+</div>
+</div>
+
 </main>
 </div>
 
 <footer>
-<p>Tài liệu UI/UX Pro Max - Biên soạn bởi <a href="https://facebook.com/dotanminh" target="_blank">Minh Đỗ</a> | Mã nguồn: <a href="https://github.com/nextlevelbuilder/ui-ux-pro-max-skill" target="_blank">GitHub</a> | Skill thuộc bộ <a href="https://github.com/dotanminh" target="_blank">Antigravity Kit Engineer</a></p>
+<p>Tài liệu UI/UX Pro Max - Biên soạn bởi <a href="https://facebook.com/dotanminh" target="_blank">Minh Đỗ</a></p>
 </footer>
 
 <nav class="bottom-nav">
